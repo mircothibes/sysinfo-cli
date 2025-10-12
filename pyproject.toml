@@ -1,0 +1,25 @@
+[project]
+name = "sysinfo-cli"
+version = "0.1.0"
+description = "CLI que exibe CPU, RAM, disco, rede e uptime; suporta --json."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+sysinfo-cli = "sysinfo.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff", "black", "pytest"]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+select = ["E","F","I","B","UP","SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
