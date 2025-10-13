@@ -1,4 +1,5 @@
-import argparse, json
+import argparse
+import json
 
 def get_sysinfo():
     # All: Fill with stdlib (/proc/*, shutil, os)
@@ -14,4 +15,8 @@ def main():
         print(json.dumps(data, ensure_ascii=False))
     else:
         print("CPU: ...\nRAM: ...\nDISK: ...\nNET: ...\nUPTIME: ...")
+
+
+if __name__ == "__main__":
+    main()
 
