@@ -44,12 +44,12 @@ def _disk_info(path: str = "/") -> dict[str, Any]:
 
 
 def _cpu_info() -> dict[str, Any]:
-    colors = os.cpu_count() or 0
+    cores = os.cpu_count() or 0
     try:
         load1, load5, load15 = os.getloadavg()
     except OSError:
         load1 = load5 = load15 = 0.0
-    return {"colors": colors, "loadavg": {"1m": load1, "5m": load5, "15m": load15}}
+    return {"cores": cores, "loadavg": {"1m": load1, "5m": load5, "15m": load15}}
 
 
 def _uptime_info() -> dict[str, Any]:
@@ -97,7 +97,7 @@ def main():
     if args.json:
         print(json.dumps(data, ensure_ascii=False))
     else:
-        print(f"CPU: colors={data['cpu']['colors']} load={data['cpu']['loadavg']}")
+        print(f"CPU: cores={data['cpu']['cores']} load={data['cpu']['loadavg']}")
         print(
             f"RAM: used={data['ram']['used_kb']}kB/"
             f"{data['ram']['total_kb']}kB ({data['ram']['percent']}%)"
