@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: sysinfo-cli
+Version: 0.1.0
+Summary: CLI que exibe CPU, RAM, disco, rede e uptime; suporta --json.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytest; extra == "dev"

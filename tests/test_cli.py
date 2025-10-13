@@ -1,4 +1,4 @@
-import json 
+import json
 import subprocess
 import sys
 
@@ -8,5 +8,5 @@ def test_runs_json():
     data = json.loads(out.decode())
 
     assert isinstance(data, dict)
-    for k in ["cpu","ram","disk","net","uptime"]:
+    for k in ["cpu", "ram", "disk", "net", "uptime"]:
         assert k in data

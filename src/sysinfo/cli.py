@@ -44,12 +44,12 @@ def _disk_info(path: str = "/") -> dict[str, Any]:
 
 
 def _cpu_info() -> dict[str, Any]:
-    cores = os.cpu_count() or 0
+    colors = os.cpu_count() or 0
     try:
         load1, load5, load15 = os.getloadavg()
     except OSError:
         load1 = load5 = load15 = 0.0
-    return {"cores": cores, "loadavg": {"1m": load1, "5m": load5, "15m": load15}}
+    return {"colors": colors, "loadavg": {"1m": load1, "5m": load5, "15m": load15}}
 
 
 def _uptime_info() -> dict[str, Any]:

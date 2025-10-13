@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/sysinfo/__init__.py
+src/sysinfo/cli.py
+src/sysinfo_cli.egg-info/PKG-INFO
+src/sysinfo_cli.egg-info/SOURCES.txt
+src/sysinfo_cli.egg-info/dependency_links.txt
+src/sysinfo_cli.egg-info/entry_points.txt
+src/sysinfo_cli.egg-info/requires.txt
+src/sysinfo_cli.egg-info/top_level.txt
+tests/test_cli.py
