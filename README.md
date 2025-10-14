@@ -8,20 +8,20 @@ It supports both standard text and JSON output.
 ## 🚀 Quick Start (Local)
 
 ```bash
-## Clone this repository
+# Clone this repository
 git clone https://github.com/mircothibes/sysinfo-cli.git
 cd sysinfo-cli
-```
 
-## Create and activate the virtual environment
+# Create and activate the virtual environment
 python -m venv .venv && source .venv/bin/activate
 
-## Install dependencies (development tools included)
+# Install dependencies (development tools included)
 pip install -e ".[dev]"
 
-## Run the CLI
+# Run the CLI
 python -m sysinfo.cli
 python -m sysinfo.cli --json
+```
 
 Example output:
 ```bash
@@ -36,15 +36,16 @@ UPTIME: 21000s
 ## 🐳 Docker
 
 You can run the same CLI in a lightweight Docker container.
-
-## Build the image
+```bash
+# Build the image
 docker build -t mvtk/sysinfo-cli:0.1.0 .
 
-## Run it (JSON output)
+# Run it (JSON output)
 docker run --rm mvtk/sysinfo-cli:0.1.0 --json
 
-## Or plain text output
+# Or plain text output
 docker run --rm mvtk/sysinfo-cli:0.1.0
+```
 
 Example JSON output:
 ```bash
