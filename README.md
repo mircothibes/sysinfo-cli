@@ -8,18 +8,18 @@ It supports both standard text and JSON output.
 ## 🚀 Quick Start (Local)
 
 ```bash
-# Clone this repository
+## Clone this repository
 git clone https://github.com/mircothibes/sysinfo-cli.git
 cd sysinfo-cli
 ```
 
-# Create and activate the virtual environment
+## Create and activate the virtual environment
 python -m venv .venv && source .venv/bin/activate
 
-# Install dependencies (development tools included)
+## Install dependencies (development tools included)
 pip install -e ".[dev]"
 
-# Run the CLI
+## Run the CLI
 python -m sysinfo.cli
 python -m sysinfo.cli --json
 
@@ -37,16 +37,17 @@ UPTIME: 21000s
 
 You can run the same CLI in a lightweight Docker container.
 
-# Build the image
+## Build the image
 docker build -t mvtk/sysinfo-cli:0.1.0 .
 
-# Run it (JSON output)
+## Run it (JSON output)
 docker run --rm mvtk/sysinfo-cli:0.1.0 --json
 
-# Or plain text output
+## Or plain text output
 docker run --rm mvtk/sysinfo-cli:0.1.0
 
 Example JSON output:
+```bash
 {
   "cpu": {"cores": 16, "loadavg": {"1m": 0.18, "5m": 0.11, "15m": 0.03}},
   "ram": {"total_kb": 8036544, "available_kb": 7397756, "used_kb": 638788, "percent": 7.95},
@@ -54,9 +55,26 @@ Example JSON output:
   "net": {"total": {"rx_bytes": 290, "tx_bytes": 42}},
   "uptime": {"seconds": 20201}
 }
+```
 
 ---
 
+## 🧰 Development
+
+I use Neovim as my main development environment with:
+- lazy.nvim
+- mason.nvim
+- nvim-lspconfig -> (Pyright)
+- conform.nvim -> for formatting
+
+Useful Commands
+```bash
+ruff check .
+black .
+pytest -q
+```
+
+---
 
 
 
