@@ -68,7 +68,7 @@ I use Neovim as my main development environment with:
 - nvim-lspconfig -> (Pyright)
 - conform.nvim -> for formatting
 
-Useful Commands
+Useful Commands:
 ```bash
 ruff check .
 black .
@@ -76,6 +76,32 @@ pytest -q
 ```
 
 ---
+
+## 🧪 Tests
+
+Run all tests using pytest:
+```bash
+pytest -q
+```
+
+---
+
+## 📦 Project Structure
+```bash
+sysinfo-cli/
+├── src/
+│   └── sysinfo/
+│       ├── __init__.py
+│       └── cli.py
+├── tests/
+│   └── test_cli.py
+├── pyproject.toml
+├── Dockerfile
+├── .dockerignore
+├── .gitignore
+└── README.md
+```
+
 
 
 
