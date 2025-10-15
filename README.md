@@ -102,7 +102,16 @@ sysinfo-cli/
 └── README.md
 ```
 
+---
 
+# ⚙️Command Reference
 
+| Command     | Description                |
+| ----------- | -------------------------- |
+| `--json`    | Output data in JSON format |
+| `--version` | Display CLI version        |
+| `--help`    | Show help message          |
+
+---
 
 
