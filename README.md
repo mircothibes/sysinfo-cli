@@ -123,6 +123,5 @@ This project is released under the MIT License.
 ## 👨‍💻 Author
 
 Marcos Vinicius Thibes Kemer
-Python Developer • Luxembourg
 
 ---
