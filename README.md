@@ -104,7 +104,7 @@ sysinfo-cli/
 
 ---
 
-## ⚙️Command Reference
+## ⚙️C ommand Reference
 
 | Command     | Description                |
 | ----------- | -------------------------- |
@@ -120,4 +120,9 @@ This project is released under the MIT License.
 
 ---
 
+## 👨‍💻 Author
 
+Marcos Vinicius Thibes Kemer
+Python Developer • Luxembourg
+
+---
