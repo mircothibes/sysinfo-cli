@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "CLI que exibe CPU, RAM, disco, rede e uptime; suporta --json."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["psutil"]
 
 [project.scripts]
 sysinfo-cli = "sysinfo.cli:main"

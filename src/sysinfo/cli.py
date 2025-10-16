@@ -91,9 +91,11 @@ def get_sysinfo() -> dict[str, Any]:
 def main():
     p = argparse.ArgumentParser(
         prog="sysinfo-cli",
-        description="Show CPU, RAM, disk, network, and uptime. Use --json for JSON output.",
+        description=(
+            "Show CPU, RAM, disk, network, and uptime." "Use --json for JSON output.",
+        ),
     )
-    
+
     p.add_argument("--version", action="version", version="sysinfo-cli 0.1.0")
 
     p.add_argument("--json", action="store_true", help="JSON output")

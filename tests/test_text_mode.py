@@ -10,4 +10,3 @@ def test_text_mode_runs():
     assert "disk:" in s
     assert "net:" in s
     assert "uptime:" in s
-
