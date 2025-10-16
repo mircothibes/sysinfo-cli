@@ -1,3 +1,5 @@
+![CI](https://github.com/mircothibes/sysinfo-cli/actions/workflows/ci.yml/badge.svg)
+
 # 🖥️ sysinfo-cli
 
 A simple command-line tool written in pure **Python** that displays system information such as **CPU**, **RAM**, **disk**, **network**, and **uptime**.  
