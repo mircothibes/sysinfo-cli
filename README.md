@@ -5,7 +5,11 @@
 ![Lint](https://img.shields.io/badge/Lint-Ruff-green)
 ![Format](https://img.shields.io/badge/Format-Black-black)
 ![Tests](https://img.shields.io/badge/Pytest-passing-brightgreen)
+![Pulls](https://img.shields.io/docker/pulls/mircothibes/sysinfo-cli)
+![Image Size](https://img.shields.io/docker/image-size/mircothibes/sysinfo-cli/latest)
+![Version](https://img.shields.io/docker/v/mircothibes/sysinfo-cli/latest)
 
+[![View on Docker Hub](https://img.shields.io/badge/View%20on-Docker%20Hub-2496ED?logo=docker)](https://hub.docker.com/r/mircothibes/sysinfo-cli)
 
 A simple command-line tool written in pure **Python** that displays system information such as **CPU**, **RAM**, **disk**, **network**, and **uptime**.  
 It supports both standard text and JSON output.
