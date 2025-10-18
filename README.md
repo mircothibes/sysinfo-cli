@@ -123,13 +123,14 @@ sysinfo-cli/
 
 ---
 
-## ⚙️C ommand Reference
+## ⚙️ Command Reference
 
-| Command     | Description                |
-| ----------- | -------------------------- |
-| `--json`    | Output data in JSON format |
-| `--version` | Display CLI version        |
-| `--help`    | Show help message          |
+| Command                     | Description                          |
+|------------------------------|--------------------------------------|
+| `python -m sysinfo.cli`      | Run the CLI and show system info     |
+| `python -m sysinfo.cli --json` | Output data in JSON format          |
+| `python -m sysinfo.cli --help`  | Show help message                  |
+| `python -m sysinfo.cli --version` | Display CLI version              |
 
 ---
 
