@@ -134,6 +134,16 @@ sysinfo-cli/
 
 ---
 
+### 🧰 Docker Commands
+
+| Command                                         | Description                      |
+|------------------------------------------------|----------------------------------|
+| `docker run --rm mircothibes/sysinfo-cli`      | Run CLI inside Docker (text)     |
+| `docker run --rm mircothibes/sysinfo-cli --json` | Run CLI inside Docker (JSON)    |
+
+---
+
+
 ## 🧾 License
 
 This project is released under the MIT License.
