@@ -143,6 +143,17 @@ sysinfo-cli/
 
 ---
 
+### 🧱 Makefile Commands *(for local development)*
+
+| Command        | Description                         |
+|----------------|--------------------------------------|
+| `make lint`    | Run Ruff linter                     |
+| `make format`  | Run Black formatter                 |
+| `make test`    | Run Pytest test suite               |
+| `make build`   | Build Docker image locally          |
+| `make run`     | Run the CLI locally via Python      |
+
+---
 
 ## 🧾 License
 
