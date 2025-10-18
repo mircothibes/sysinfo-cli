@@ -100,17 +100,25 @@ pytest -q
 ## 📦 Project Structure
 ```bash
 sysinfo-cli/
-├── src/
+├── .github/                  # GitHub Actions workflows (CI/CD)
+│   └── workflows/
+│       └── ci.yml
+├── src/                      # Application source code
 │   └── sysinfo/
 │       ├── __init__.py
 │       └── cli.py
-├── tests/
+├── tests/                    # Unit tests (pytest)
 │   └── test_cli.py
-├── pyproject.toml
-├── Dockerfile
-├── .dockerignore
-├── .gitignore
-└── README.md
+├── .dockerignore             # Files excluded from Docker build
+├── .gitignore                # Git ignored files
+├── .pre-commit-config.yaml   # Pre-commit hooks (Ruff, Black, Pytest)
+├── Dockerfile                # Docker image definition
+├── Makefile                  # Build, test, and lint automation
+├── pyproject.toml            # Build system & dependencies
+├── pytest.ini                # Pytest configuration
+├── README.md                 # Project documentation
+└── .venv/                    # Local virtual environment (ignored in Git)
+
 ```
 
 ---
