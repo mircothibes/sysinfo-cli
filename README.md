@@ -16,6 +16,16 @@ It supports both standard text and JSON output.
 
 ---
 
+### 🐳 Run in Docker (Example Output)
+
+You can easily run **sysinfo-cli** directly from Docker:
+
+```bash
+docker run --rm mircothibes/sysinfo-cli:latest --json | jq
+```
+
+---
+
 ## 🚀 Quick Start (Local)
 
 ```bash
@@ -42,6 +52,7 @@ DISK: used=3458965504/1081101176832 (0.32%)
 NET: total_rx=290 total_tx=42
 UPTIME: 21000s
 ```
+
 ---
 
 ## 🐳 Docker
