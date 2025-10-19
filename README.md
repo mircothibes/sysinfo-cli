@@ -14,15 +14,6 @@
 A simple command-line tool written in pure **Python** that displays system information such as **CPU**, **RAM**, **disk**, **network**, and **uptime**.  
 It supports both standard text and JSON output.
 
----
-
-### 🐳 Run in Docker (Example Output)
-
-You can easily run **sysinfo-cli** directly from Docker:
-
-```bash
-docker run --rm mircothibes/sysinfo-cli:latest --json | jq
-```
 
 ---
 
